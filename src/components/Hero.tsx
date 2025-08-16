@@ -26,7 +26,7 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="text-center lg:text-left">
-            <div className="animate-fade-in-up bg-charcoal/80 backdrop-blur-sm rounded-2xl p-8 lg:p-10">
+            <div className="animate-fade-in-up">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-cream leading-tight mb-6">
                 You bring the dream.{" "}
                 <span className="text-red">I build the reality.</span>
