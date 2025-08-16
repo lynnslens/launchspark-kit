@@ -1,7 +1,7 @@
 const audiences = [
   "Solopreneurs",
-  "Digital creators",
-  "Nomads", 
+  "Small businesses",
+  "Coaches and creators", 
   "Side hustlers",
 ];
 
