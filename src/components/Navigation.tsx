@@ -31,7 +31,11 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <h1 className="text-xl font-bold text-charcoal">Launch-in-a-Box</h1>
+            <img 
+              src="/lovable-uploads/b771c7cb-d7c8-4723-a8a6-3542508c3420.png" 
+              alt="Launch in a Box Logo" 
+              className="h-8 w-auto"
+            />
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
