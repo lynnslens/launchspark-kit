@@ -1,8 +1,8 @@
 const audiences = [
-  "Artists & musicians",
-  "Coaches & consultants", 
-  "Small businesses",
-  "Event creators",
+  "Solopreneurs",
+  "Digital creators",
+  "Nomads", 
+  "Side hustlers",
 ];
 
 const WhoItsFor = () => {
