@@ -1,58 +1,57 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Palette, Globe, FileImage, CheckSquare } from "lucide-react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Palette, Globe, Package, Rocket } from "lucide-react";
 
 const features = [
   {
     icon: Palette,
     title: "Brand Identity",
-    description: "Name/tagline, colors, fonts, messaging guide.",
+    description: "Name, tagline, colors, fonts, messaging guide."
   },
   {
     icon: Globe,
-    title: "Website Setup",
-    description: "Lovable.dev build, magnetic copy, on-brand placeholders.",
+    title: "Website Setup", 
+    description: "Lovable.dev build, copy, placeholder visuals."
   },
   {
-    icon: FileImage,
+    icon: Package,
     title: "Creative Asset Pack",
-    description: "Product mockups, Canva templates, icons & imagery.",
+    description: "Mockups, Canva templates, icons & imagery."
   },
   {
-    icon: CheckSquare,
+    icon: Rocket,
     title: "Launch-Ready Systems",
-    description: "Repeatable checklists + simple awareness plan.",
-  },
+    description: "Repeatable checklists + awareness plan."
+  }
 ];
 
 const WhatYouGet = () => {
   return (
-    <section id="what-you-get" className="py-20 bg-background">
+    <section id="what-you-get" className="py-20 bg-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-charcoal mb-6">
             What You Get
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Everything you need to launch your brand with confidence and style.
+          <p className="text-xl text-charcoal/70 max-w-3xl mx-auto">
+            Everything you need to launch a professional brand that stands out and sells.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
-            <Card
-              key={index}
-              className="text-center hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 bg-card border-border"
-            >
-              <CardContent className="p-8">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-accent rounded-full mb-6">
-                  <feature.icon className="w-8 h-8 text-white" />
+            <Card key={index} className="text-center border-charcoal/10 hover:shadow-elevated transition-all duration-300 group">
+              <CardHeader>
+                <div className="mx-auto w-16 h-16 bg-gradient-accent rounded-full flex items-center justify-center mb-4 group-hover:shadow-red-glow transition-all duration-300">
+                  <feature.icon className="w-8 h-8 text-cream" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-4">
+                <CardTitle className="text-xl font-heading font-bold text-charcoal">
                   {feature.title}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-charcoal/70 text-base leading-relaxed">
                   {feature.description}
-                </p>
+                </CardDescription>
               </CardContent>
             </Card>
           ))}

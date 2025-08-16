@@ -31,35 +31,37 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <img 
-              src="/lovable-uploads/b771c7cb-d7c8-4723-a8a6-3542508c3420.png" 
-              alt="Launch in a Box Logo" 
-              className="h-8 w-auto"
-            />
+            <h1 className="text-xl font-heading font-extrabold">
+              <span className="text-red">Launch</span>
+              <span className="text-charcoal">-in-a-Box</span>
+            </h1>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("packages")}
-              className="text-foreground/80 hover:text-foreground transition-colors"
+              className="text-charcoal/80 hover:text-charcoal transition-colors font-medium"
             >
               Packages
             </button>
             <button
               onClick={() => scrollToSection("how-it-works")}
-              className="text-foreground/80 hover:text-foreground transition-colors"
+              className="text-charcoal/80 hover:text-charcoal transition-colors font-medium"
             >
               How It Works
             </button>
             <button
               onClick={() => scrollToSection("faq")}
-              className="text-foreground/80 hover:text-foreground transition-colors"
+              className="text-charcoal/80 hover:text-charcoal transition-colors font-medium"
             >
               FAQ
             </button>
           </div>
 
-          <Button variant="hero" size="lg" onClick={() => window.open('#', '_blank')}>
+          <Button 
+            className="bg-red hover:bg-red/90 text-cream font-semibold px-6 py-2 rounded-lg"
+            onClick={() => window.open('#', '_blank')}
+          >
             Book & Pay Now
           </Button>
         </div>

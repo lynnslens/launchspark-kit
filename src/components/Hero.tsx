@@ -27,7 +27,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="text-center lg:text-left">
             <div className="animate-fade-in-up">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-cream leading-tight mb-6">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-cream leading-tight mb-6">
                 You bring the dream.{" "}
                 <span className="text-red">I build the reality.</span>
               </h1>
@@ -38,16 +38,15 @@ const Hero = () => {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button
-                  variant="hero"
+                  className="bg-red hover:bg-red/90 text-cream font-semibold px-8 py-4 text-lg rounded-lg animate-pulse-soft"
                   size="xl"
                   onClick={() => window.open('#', '_blank')}
-                  className="animate-pulse-soft"
                 >
                   Book & Pay Now
                 </Button>
                 
                 <Button
-                  variant="hero-outline"
+                  className="border-2 border-cream text-cream hover:bg-cream hover:text-charcoal font-semibold px-8 py-4 text-lg rounded-lg"
                   size="xl"
                   onClick={() => scrollToSection("packages")}
                 >
